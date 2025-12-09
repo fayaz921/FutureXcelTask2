@@ -1,7 +1,9 @@
 ﻿using FutureXcelTask2.Models;
 using FutureXcelTask2.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace FutureXcelTask2.Controllers
 {
@@ -75,6 +77,21 @@ namespace FutureXcelTask2.Controllers
             return Ok(new { message = "Logged out successfully" });
         }
 
+        [Authorize]
+        [HttpGet("me")]
+        public IActionResult GetCurrentUser()
+        {
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            return Ok(new
+            {
+                id = userId,
+                email = email,
+                name = name
+            });
+        }
         private void SetTokenCookie(string token)
         {
             var cookieOptions = new CookieOptions
