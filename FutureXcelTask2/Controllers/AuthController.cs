@@ -1,7 +1,6 @@
 ﻿using FutureXcelTask2.Models;
 using FutureXcelTask2.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
