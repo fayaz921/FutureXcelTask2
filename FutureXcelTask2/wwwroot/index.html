@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Built by Fayaz</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Custom JS -->
+    <script src="assets/js/auth.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light p-3 shadow-sm">
+        <span class="navbar-brand mb-0 h4">Welcome User</span>
+        <button class="btn btn-danger logout-btn" onclick="logoutUser()">Logout</button>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card shadow p-4 text-center">
+            <h3 class="mb-3">You are logged in 🎉</h3>
+            <p class="text-muted">This is a protected page. Only authenticated users can access this.</p>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 mb-3 text-muted">
+        Built by Fayaz
+    </footer>
+</body>
+</html>
