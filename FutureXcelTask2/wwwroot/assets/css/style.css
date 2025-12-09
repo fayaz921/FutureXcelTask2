@@ -1,0 +1,88 @@
+﻿/* ---------------------- General Body ---------------------- */
+body {
+    background-color: #eef1f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------- Navbar ---------------------- */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logout-btn {
+    float: right;
+}
+
+/* ---------------------- Cards ---------------------- */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Login & Signup Cards */
+.login-card, .signup-card {
+    max-width: 450px;
+    margin: auto;
+    margin-top: 6%;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+/* Index Page Card */
+#index .card, .home-card {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ---------------------- Form Fields ---------------------- */
+.form-label {
+    font-weight: 500;
+}
+
+input.form-control {
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+/* ---------------------- Buttons ---------------------- */
+.btn-primary, .btn-success, .btn-danger {
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+/* ---------------------- Footer ---------------------- */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* ---------------------- Error Messages ---------------------- */
+#errorMsg {
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+
+/* ---------------------- Links ---------------------- */
+a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
