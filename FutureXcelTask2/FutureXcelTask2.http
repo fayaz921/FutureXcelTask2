@@ -1,0 +1,6 @@
+@FutureXcelTask2_HostAddress = http://localhost:5112
+
+GET {{FutureXcelTask2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
