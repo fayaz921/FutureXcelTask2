@@ -6,7 +6,7 @@ function loginUser() {
         url: "/api/auth/login",
         method: "POST",
         contentType: "application/json",
-        xhrFields: { withCredentials: true }, // important for HttpOnly cookie
+        xhrFields: { withCredentials: true }, 
         data: JSON.stringify({
             email: $("#email").val(),
             password: $("#password").val()
@@ -29,7 +29,7 @@ function signupUser() {
         url: "/api/auth/signup",
         method: "POST",
         contentType: "application/json",
-        xhrFields: { withCredentials: true }, // important for HttpOnly cookie
+        xhrFields: { withCredentials: true }, 
         data: JSON.stringify({
             name: $("#name").val(),
             email: $("#email").val(),
