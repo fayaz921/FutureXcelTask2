@@ -53,8 +53,7 @@ function logoutUser() {
 }
 
 // CHECK LOGIN
-$(document).ready(function () {
-    
+$(document).ready(function () {   
     $.get("/api/auth/me")
         .fail(function () {
             if (window.location.pathname.includes("index.html")) {
