@@ -54,7 +54,7 @@ function logoutUser() {
 
 // CHECK LOGIN
 $(document).ready(function () {
-    // Try fetching current user to see if token cookie exists
+    
     $.get("/api/auth/me")
         .fail(function () {
             if (window.location.pathname.includes("index.html")) {
